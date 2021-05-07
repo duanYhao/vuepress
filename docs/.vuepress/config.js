@@ -2,15 +2,12 @@ module.exports = {
     title: 'Hello VuePress',
     description: 'learn',
     theme: 'reco',
-    head: [
-        ['testlink',{rel: 'icon', href:''}]
-    ],
     markdown: {
         lineNumbers: true
     },
     serviceWorker: true,
     themeConfig: {
-        logo: '',
+        // logo: '',
         subSidebar: 'auto',
         lastUpdated: 'lastUpdate',
         nav: [
@@ -19,11 +16,11 @@ module.exports = {
                 text: '分类',
                 ariaLabel: '分类',
                 items: [
-                    { text: 'javascript', link: '/pages/js/js.md'},
-                    { text: 'css', link: '/pages/css/css.md'},
-                    { text: 'typescript', link: '/pages/ts/ts.md'},
-                    { text: 'vue', link: '/pages/vue/vue.md'},
-                    { text: 'react', link: '/pages/react/react.md'},
+                    { text: 'javascript', link: '/pages/js/index.md'},
+                    { text: 'css', link: '/pages/css/index.md'},
+                    { text: 'typescript', link: '/pages/ts/index.md'},
+                    { text: 'vue', link: '/pages/vue/index.md'},
+                    { text: 'react', link: '/pages/react/index.md'},
                 ]
             }
         ],

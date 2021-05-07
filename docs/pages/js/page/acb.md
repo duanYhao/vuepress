@@ -1,0 +1,3 @@
+---
+title: call,apply,bind
+---
