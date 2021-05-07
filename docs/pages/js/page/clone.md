@@ -20,9 +20,13 @@ function shallowClone(obj){
 function deepClone(obj){
     var result
     if(typeof obj === 'object'){
-        result = Object.prototype.toString.call(obj) === '[object Array]' ? [] : {}
-        for(let key in obj){
-            result[key] = typeof obj[key] === 'object' ? clone3(obj[key]) : obj[key]
+       if(obj === null){
+            result = null
+        }else{
+            result = Object.prototype.toString.call(obj) === '[object Array]' ? [] : {}
+            for(let key in obj){
+                result[key] = typeof obj[key] === 'object' ? clone3(obj[key]) : obj[key]
+            }
         }
     }else{
         result = obj
