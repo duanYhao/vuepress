@@ -1,5 +1,5 @@
 module.exports = {
-    title: 'Hello VuePress',
+    title: '',
     description: 'learn',
     theme: 'reco',
     markdown: {
@@ -21,6 +21,8 @@ module.exports = {
                     { text: 'typescript', link: '/pages/ts/index.md'},
                     { text: 'vue', link: '/pages/vue/index.md'},
                     { text: 'react', link: '/pages/react/index.md'},
+                    { text: 'http', link: '/pages/http/index.md'},
+                    { text: 'webpack', link: '/pages/webpack/index.md'},
                 ]
             }
         ],

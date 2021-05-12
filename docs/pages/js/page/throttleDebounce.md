@@ -10,6 +10,7 @@ function debounce(func,delay){
     return function(...args){
         if(timer){
             clearTimeout(timer)
+            timer = null
         }
         timer = setTimeout(() => {
             func.apply(this,args)

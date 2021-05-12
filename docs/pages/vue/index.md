@@ -1,1 +1,4 @@
-+ ## [vue](/pages/vue/page/vue)
+---
+    title: vue
+---
++ [vue](/pages/vue/page/vue)
