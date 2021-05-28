@@ -5,10 +5,12 @@
 ## 数据类型
 1. **基本类型**
     ```javascript
+    // 基础数据类型存储在  栈内存
     Number, Boolean, String, null, undefined, symbol, BigInt
     ```
 2. **引用类型**
     ```javascript
+    // 引用数据类型存储在  堆内存
     Object, Array, Function, Date, RegExp, 
     基本包装类型, 单体内置对象(Global, Math)
     ```
@@ -18,7 +20,7 @@
     typeof(表达式)   typeof  变量名
     ```
     返回值：undefined boolean string number object(对象类型或者null) function<br>
-    主要用于判断基本数据类型，object类型无法判断具体是是什么类型的对象
+    主要用于判断基本数据类型(null 除外)，object类型无法判断具体是是什么类型的对象
 
 + **instanceof**
     ```javascript
@@ -40,3 +42,20 @@
     }
     ```
 + **Object.prototype.toString.call(target)**
+
+## 类型转换
+
++ **强制类型转换**  
+
+    Number()、parseInt()、parseFloat()、toString()、String()、Boolean()
+
+    ```javascript
+        Number(true);        // 1
+        Number(false);       // 0
+        Number('0111');      //111
+        Number(null);        //0
+        Number('');          //0
+        Number('1a');        //NaN
+        Number(-0X11);       //-17
+        Number('0X11')       //17
+    ```
